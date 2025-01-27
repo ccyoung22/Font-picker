@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(255, 254, 250);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.body-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 30vh;
+  width: 100vw;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100vw;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 100vw;
+}
+
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

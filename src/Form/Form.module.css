@@ -1,0 +1,23 @@
+.input {
+  color: red;
+  background-color: rgb(255, 255, 243);
+  border-color: red;
+  border-style: none;
+  font-size: 40px;
+  width: 710px;
+  border-radius: 8px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 0.8s step-start infinite;
+  color: red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+  font-size: 35px;
+}
