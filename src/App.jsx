@@ -5,6 +5,12 @@ import Form from "./Form/Form.jsx";
 import Board from "./Board/Board.jsx";
 
 function App() {
+  const [boardText, setBoardText] = useState("");
+
+  function addToBoard(textInput) {
+    setBoardText(textInput);
+  }
+
   return (
     <>
       <div className="body-container">
@@ -12,10 +18,10 @@ function App() {
           <Title text="type your text here to see my favourite fonts" />
         </div> */}
         <div className="form-container">
-          <Form text="type something here to try some good fonts" />
+          <Form addToBoard={addToBoard} />
         </div>
         <div className="board-container">
-          <Board />
+          <Board boardText={boardText} />
         </div>
       </div>
     </>
