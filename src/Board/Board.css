@@ -1,3 +1,12 @@
+.font-space-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  width: 100vw;
+  height: 30vh;
+}
+
 @font-face {
   font-family: "DxGlitar";
   src: url("../Assests/DxGlitar-free-font.ttf") format("truetype");
@@ -15,6 +24,7 @@
 
 @font-face {
   font-family: "Obrazec";
+  letter-spacing: 0.1cap;
   src: url("../Assests/Obrazec-2.ttf");
 }
 
@@ -27,12 +37,68 @@
 }
 
 .three {
-  font-family: "DxGlitar";
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 150px;
 }
 .four {
   font-family: "NeneMentana";
+  font-size: 80px;
 }
 
 .five {
-  font-family: "Obrazec";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+  font-size: 150px;
+}
+
+/* .font-space-div {
+  font-size: 100px;
+  margin: 10px;
+  width: auto;
+} */
+h1 {
+  margin: 0;
+  position: fixed;
+  text-align: center;
+}
+
+.button-div {
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: row;
+  gap: 40px;
+  position: fixed;
+  margin-top: 50px;
+}
+
+button {
+  margin: 10px;
+  width: auto;
+  height: 80px;
+  font-size: 30px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(255, 254, 250);
+}
+
+.HarmondButton {
+  font-family: "Harmond";
+  padding-top: 10px;
+}
+
+.impactButton {
+  padding-top: 5px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.NeneMentanaButton {
+  font-family: "NeneMentana";
+}
+
+.gillSansButton {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.1cap;
 }

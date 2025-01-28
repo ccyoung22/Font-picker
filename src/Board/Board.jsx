@@ -5,7 +5,6 @@ import FontPickerButton from "./Font-picker/Font-picker.jsx";
 import { useState } from "react";
 
 function Board({ boardText }) {
-  const [color, SetChangeColor] = useState("black");
   const [font, setFont] = useState("one");
 
   function changeFont() {
@@ -26,19 +25,35 @@ function Board({ boardText }) {
 
   return (
     <>
-      <h1 style={{ color }} className={font}>
-        {boardText}
-      </h1>
-      {/* <button onClick={() => SetChangeColor("red")}>Change To Red</button>
-      <button onClick={() => SetChangeColor("blue")}>Change To Blue</button> */}
-      <button onClick={changeFont}>Harmond</button>
-      <button onClick={changeFont2}>DxGlitar</button>
-      <button onClick={changeFont3}>NeneMentana</button>
-      <button onClick={changeFont4}>Obrazec</button>
+      <div className="board">
+        <div className="font-space-div">
+          <h1 className={font}>{boardText}</h1>
+        </div>
+        <div className="button-div">
+          <button onClick={changeFont} className="HarmondButton">
+            HARMOND
+          </button>
+          <button onClick={changeFont2} className="impactButton">
+            impact
+          </button>
+          <button onClick={changeFont3} className="NeneMentanaButton">
+            NeneMentana
+          </button>
+          <button onClick={changeFont4} className="gillSansButton">
+            Gill Sans
+          </button>
+        </div>
+      </div>
     </>
   );
 }
 
 export default Board;
+
+{
+  /* <button onClick={() => SetChangeColor("red")}>Change To Red</button>
+      <button onClick={() => SetChangeColor("blue")}>Change To Blue</button> 
+      const [color, SetChangeColor] = useState("black");*/
+}
 
 //we need to be able to click the button so the button should be able to handle click
