@@ -22,6 +22,9 @@ function Board({ boardText }) {
   function changeFont4() {
     setFont("five");
   }
+  function changeFont5() {
+    setFont("six");
+  }
 
   return (
     <>
@@ -31,7 +34,7 @@ function Board({ boardText }) {
         </div>
         <div className="button-div">
           <button onClick={changeFont} className="HarmondButton">
-            HARMOND
+            Harmond
           </button>
           <button onClick={changeFont2} className="impactButton">
             impact
@@ -40,7 +43,10 @@ function Board({ boardText }) {
             NeneMentana
           </button>
           <button onClick={changeFont4} className="gillSansButton">
-            Gill Sans
+            GILL SANS
+          </button>
+          <button onClick={changeFont5} className="gillSansBoldButton">
+            Gill Sans Bold
           </button>
         </div>
       </div>
